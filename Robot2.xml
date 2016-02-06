@@ -1,26 +1,26 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="454" inline="true" x="-24" y="135">
-    <value name="TIMES">
-      <block type="math_number" id="464">
-        <field name="NUM">10000</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="oled_cleardisplay" id="379">
-        <next>
-          <block type="oled_setcursor" id="395" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="402">
-                <field name="NUM">100</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="409">
-                <field name="NUM">100</field>
-              </block>
-            </value>
+  <block type="movement_forward" id="508" x="-11" y="114">
+    <next>
+      <block type="controls_repeat" id="454" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="464">
+            <field name="NUM">10000</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="oled_cleardisplay" id="379">
             <next>
-              <block type="movement_forward" id="508">
+              <block type="oled_setcursor" id="395" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="402">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="409">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
                 <next>
                   <block type="oled_drawnumber" id="496" inline="true">
                     <value name="NUMBER">
@@ -33,8 +33,8 @@
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
