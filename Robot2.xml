@@ -28,6 +28,28 @@
                         <field name="NUM">0</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="controls_if" id="254" inline="false">
+                        <value name="IF0">
+                          <block type="logic_compare" id="344" inline="true">
+                            <field name="OP">GTE</field>
+                            <value name="A">
+                              <block type="sensor_spectrometer" id="296">
+                                <field name="LIGHT">RED</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="351">
+                                <field name="NUM">95</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="movement_stop" id="361"></block>
+                        </statement>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
