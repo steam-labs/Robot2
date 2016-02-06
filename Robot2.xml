@@ -18,20 +18,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_stop" id="569">
-            <next>
-              <block type="robot_delay" id="571" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="578">
-                    <field name="NUM">5000</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_right" id="588"></block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_stop" id="569"></block>
         </statement>
         <next>
           <block type="controls_repeat" id="479" inline="true">
@@ -70,6 +57,16 @@
           </block>
         </next>
       </block>
+    </next>
+  </block>
+  <block type="robot_delay" id="571" inline="true" x="154" y="460">
+    <value name="DELAY">
+      <block type="math_number" id="578">
+        <field name="NUM">5000</field>
+      </block>
+    </value>
+    <next>
+      <block type="movement_right" id="588"></block>
     </next>
   </block>
 </xml>
