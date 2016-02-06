@@ -15,7 +15,22 @@
               </block>
             </value>
             <next>
-              <block type="oled_cleardisplay" id="214"></block>
+              <block type="oled_cleardisplay" id="214">
+                <next>
+                  <block type="oled_setcursor" id="224" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="231">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="238">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </statement>
