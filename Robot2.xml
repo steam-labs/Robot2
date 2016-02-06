@@ -4,15 +4,15 @@
       <block type="controls_if" id="532" inline="false">
         <value name="IF0">
           <block type="logic_compare" id="552" inline="true">
-            <field name="OP">EQ</field>
+            <field name="OP">GTE</field>
             <value name="A">
-              <block type="math_number" id="559">
-                <field name="NUM">0</field>
+              <block type="sensor_spectrometer" id="539">
+                <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <value name="B">
-              <block type="sensor_spectrometer" id="539">
-                <field name="LIGHT">BLUE</field>
+              <block type="math_number" id="559">
+                <field name="NUM">90</field>
               </block>
             </value>
           </block>
