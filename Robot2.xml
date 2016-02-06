@@ -1,30 +1,30 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="508" x="-11" y="114">
+  <block type="movement_forward" id="1" x="-11" y="114">
     <next>
-      <block type="controls_repeat" id="454" inline="true">
+      <block type="controls_repeat" id="2" inline="true">
         <value name="TIMES">
-          <block type="math_number" id="464">
+          <block type="math_number" id="3">
             <field name="NUM">10000</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="oled_cleardisplay" id="379">
+          <block type="oled_cleardisplay" id="4">
             <next>
-              <block type="oled_setcursor" id="395" inline="true">
+              <block type="oled_setcursor" id="5" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="402">
+                  <block type="math_number" id="6">
                     <field name="NUM">0</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="409">
+                  <block type="math_number" id="7">
                     <field name="NUM">0</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawnumber" id="496" inline="true">
+                  <block type="oled_drawnumber" id="8" inline="true">
                     <value name="NUMBER">
-                      <block type="sensor_spectrometer" id="257">
+                      <block type="sensor_spectrometer" id="9">
                         <field name="LIGHT">RED</field>
                       </block>
                     </value>
