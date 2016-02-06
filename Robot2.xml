@@ -10,19 +10,4 @@
       </block>
     </next>
   </block>
-  <block type="controls_if" id="100" inline="false" x="-9" y="195">
-    <value name="IF0">
-      <block type="logic_compare" id="150" inline="true">
-        <field name="OP">GT</field>
-        <value name="B">
-          <block type="math_number" id="136">
-            <field name="NUM">93</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO0">
-      <block type="movement_stop" id="79"></block>
-    </statement>
-  </block>
 </xml>
