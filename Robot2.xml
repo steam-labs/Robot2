@@ -1,26 +1,28 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="12" x="224" y="118">
     <next>
-      <block type="controls_if" id="100" inline="false">
-        <value name="IF0">
-          <block type="logic_compare" id="150" inline="true">
-            <field name="OP">GT</field>
-            <value name="A">
-              <block type="sensor_spectrometer" id="86">
-                <field name="LIGHT">RED</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="136">
-                <field name="NUM">95</field>
-              </block>
-            </value>
+      <block type="oled_drawnumber" id="159" inline="true">
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="86">
+            <field name="LIGHT">RED</field>
           </block>
         </value>
-        <statement name="DO0">
-          <block type="movement_stop" id="79"></block>
-        </statement>
       </block>
     </next>
+  </block>
+  <block type="controls_if" id="100" inline="false" x="-9" y="195">
+    <value name="IF0">
+      <block type="logic_compare" id="150" inline="true">
+        <field name="OP">GT</field>
+        <value name="B">
+          <block type="math_number" id="136">
+            <field name="NUM">93</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="movement_stop" id="79"></block>
+    </statement>
   </block>
 </xml>
