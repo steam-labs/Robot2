@@ -44,7 +44,7 @@
               <block type="oled_drawnumber" id="159" inline="true">
                 <value name="NUMBER">
                   <block type="sensor_spectrometer" id="86">
-                    <field name="LIGHT">RED</field>
+                    <field name="LIGHT">BLUE</field>
                   </block>
                 </value>
                 <next>
@@ -61,32 +61,6 @@
                             <field name="NUM">0</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="controls_if" id="506" inline="false">
-                            <mutation else="1"></mutation>
-                            <value name="IF0">
-                              <block type="logic_compare" id="344" inline="true">
-                                <field name="OP">GTE</field>
-                                <value name="A">
-                                  <block type="sensor_spectrometer" id="296">
-                                    <field name="LIGHT">RED</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="351">
-                                    <field name="NUM">94</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <statement name="DO0">
-                              <block type="movement_stop" id="397"></block>
-                            </statement>
-                            <statement name="ELSE">
-                              <block type="movement_forward" id="387"></block>
-                            </statement>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
