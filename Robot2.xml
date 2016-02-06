@@ -29,8 +29,9 @@
                       </block>
                     </value>
                     <next>
-                      <block type="controls_if" id="254" inline="false">
-                        <value name="IF0">
+                      <block type="controls_whileUntil" id="463" inline="false">
+                        <field name="MODE">UNTIL</field>
+                        <value name="NUMBER">
                           <block type="logic_compare" id="344" inline="true">
                             <field name="OP">GTE</field>
                             <value name="A">
@@ -45,7 +46,7 @@
                             </value>
                           </block>
                         </value>
-                        <statement name="DO0">
+                        <statement name="DO">
                           <block type="movement_stop" id="397">
                             <next>
                               <block type="robot_delay" id="363" inline="true">
