@@ -28,24 +28,24 @@
               <block type="movement_right" id="661"></block>
             </statement>
             <next>
-              <block type="oled_drawnumber" id="159" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="86">
-                    <field name="LIGHT">GREEN</field>
-                  </block>
-                </value>
+              <block type="oled_cleardisplay" id="214">
                 <next>
-                  <block type="oled_cleardisplay" id="214">
+                  <block type="oled_setcursor" id="224" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="231">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="238">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="oled_setcursor" id="224" inline="true">
-                        <value name="STARTX">
-                          <block type="math_number" id="231">
-                            <field name="NUM">0</field>
-                          </block>
-                        </value>
-                        <value name="STARTY">
-                          <block type="math_number" id="238">
-                            <field name="NUM">0</field>
+                      <block type="oled_drawnumber" id="159" inline="true">
+                        <value name="NUMBER">
+                          <block type="sensor_spectrometer" id="86">
+                            <field name="LIGHT">GREEN</field>
                           </block>
                         </value>
                       </block>
