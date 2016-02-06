@@ -7,7 +7,7 @@
             <field name="OP">GTE</field>
             <value name="A">
               <block type="sensor_spectrometer" id="539">
-                <field name="LIGHT">BLUE</field>
+                <field name="LIGHT">GREEN</field>
               </block>
             </value>
             <value name="B">
@@ -44,7 +44,7 @@
               <block type="oled_drawnumber" id="159" inline="true">
                 <value name="NUMBER">
                   <block type="sensor_spectrometer" id="86">
-                    <field name="LIGHT">BLUE</field>
+                    <field name="LIGHT">GREEN</field>
                   </block>
                 </value>
                 <next>
